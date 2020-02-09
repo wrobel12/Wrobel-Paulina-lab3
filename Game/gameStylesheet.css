@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #dbe6e6;
+    width: 360px;
+    height: 640px;
+  }
+
+  #startPannel {
+    position:absolute;
+    font-family:'Voltaire', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:70px;
+    text-align:center;
+    color:#ffc5a2;
+    opacity:1;
+    left:50%;
+    top:50%;
+    width:100%;
+    transform : translate(-50%,-100%);
+    user-select: none;
+    transition: all 500ms ease-in-out;
+  }
+
+  
+#startGame {
+    position:absolute;
+    font-family:'Voltaire', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    text-align:center;
+    color: #5f9042;
+    opacity:0.6;
+    left:50%;
+    width:100%;
+    transform : translate(-50%,-100%);
+    user-select: none;
+    transition: all 500ms ease-in-out;
+    margin-top: 50px;
+  }
+
+  #instructions{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    margin: auto;
+    margin-bottom:50px;
+    font-family:'Voltaire', sans-serif;
+    color:#dc5f45;
+    font-size:16px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    text-align : center;
+    user-select: none;
+    transition: all 500ms ease-in-out;
+    
+  }
+  .lightInstructions {
+    color:#5f9042;
+  }
+  .ball {
+    top: 0;
+    left: 0;
+    width : 50px;
+    height: 50px;
+    background: #dc5f45;
+    border-radius: 100%;
+    position:absolute;
+    bottom:0;
+    /* margin-top: 550px;
+    margin-left: 150px; */
+    align-self: center;
+    opacity: 0;
+   
+    
+  }
+
+  #time{
+    position:absolute;
+    left:50%;
+    top:50px;
+    transform:translate(-50%,0%);
+    user-select: none;  
+    opacity: 0;
+  }
+
+  .label{
+    position:relative;
+    font-family:'Voltaire', sans-serif;
+    text-transform:uppercase;
+    color:#ffa873;
+    font-size:12px;
+    letter-spacing:2px;
+    text-align:center;
+    margin-bottom:5px;
+  }
+
+  #timeValue{
+    position:relative;
+    text-transform:uppercase;
+    color:#dc5f45;
+    font-size:40px;
+    font-family:'Voltaire';
+    text-align:center;
+  }
+
+  #again {
+    position:absolute;
+    font-family:'Voltaire', sans-serif;
+  
+    text-transform: uppercase;
+    font-size:20px;
+    text-align:center;
+    color: #dc5f45;
+    opacity:0.6;
+    left:50%;
+   
+    width:100%;
+    transform : translate(-50%,-100%);
+    user-select: none;
+    transition: all 500ms ease-in-out;
+    margin-top: 50px;
+  }
+
+  #failMsg{
+    position:absolute;
+    font-family:'Voltaire', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:70px;
+    text-align:center;
+    color:#c92828;
+    opacity:0;
+    left:50%;
+    top:50%;
+    width:100%;
+    transform : translate(-50%,-100%);
+    user-select: none;
+    transition: all 500ms ease-in-out;
+    z-index: 40;
+  }
+
+  #winMsg{
+    position:absolute;
+    font-family:'Voltaire', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:70px;
+    text-align:center;
+    color:#5f9042;
+    opacity:0;
+    left:50%;
+    top:50%;
+    width:100%;
+    transform : translate(-50%,-100%);
+    user-select: none;
+    transition: all 500ms ease-in-out;
+  }
+  

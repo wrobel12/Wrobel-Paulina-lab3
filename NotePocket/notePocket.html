@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="NotePocketScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="NotePocketStylesheet.css">
+    <title>NotePocket</title>
+</head>
+
+<body>
+
+        <div class="card" id="wrapper">
+                <div class="card-header text-center" id="main-header">
+                
+                  <span class="navbar-text">
+                    <h1 class="display-4">Let's make some notes</h1>
+                  </span>
+                      
+
+                 
+                </div>
+                <div class="row">
+  
+                    <div id="pinnedNotes" class="col-sm-12 row"> </div>
+
+                <div class="card-body" id="createNewNote">
+                  
+                  <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header"  id="addNoteCard"><div class="input-group mb-3">
+                          <input type="text" onfocus="this.value=''" value="Title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="titleValue">
+                        </div></div>
+                        <div class="card-body text-secondary">
+                          <textarea class="form-control" aria-label="With textarea" id="descValue"></textarea>
+                        </div>
+                        <div class="btn-group" role="group"  id="colors">
+                        <button type="button" class="btn btn-primary" id="blueColor"></button>
+<button type="button" class="btn btn-success" id="greenColor"></button>
+<button type="button" class="btn btn-danger" id="redColor"></button>
+<button type="button" class="btn btn-warning" id="yellowColor"></button>
+<button type="button" class="btn btn-info" id="lightBlueColor"></button>
+<button type="button" class="btn btn-dark" id="darkColor"></button>
+                  </div>
+                        <div class="card-footer bg-transparent border-primary">
+                          <button type="button" class="btn btn-primary" id="createNote">Add note</button>
+                        </div>
+                      </div>
+                </div>
+             
+                
+                
+
+
+                <div id="notes" class="col-sm-12 row"> </div>
+    
+                    
+                </div>
+              </div>
+    
+
+              <script>
+                  let addNote = document.querySelector('#createNote');
+                  addNote.addEventListener('click', (e) => createNote('titleValue','descValue'), false)
+                  addNote.addEventListener('click', (e) => clearArea('titleValue',"descValue"))
+
+                  let blueButton = document.querySelector('#blueColor').addEventListener('click', (e) => changeColor("rgb(0, 123, 255)"));
+                  let greenButton = document.querySelector('#greenColor').addEventListener('click', (e) => changeColor("rgb(40, 167, 69)"));
+                  let redButton = document.querySelector('#redColor').addEventListener('click', (e) => changeColor("rgb(220, 53, 69)"));
+                  let yellowButton = document.querySelector('#yellowColor').addEventListener('click', (e) => changeColor("rgb(255, 193, 7)"));
+                  let lightBlueButton = document.querySelector('#lightBlueColor').addEventListener('click', (e) => changeColor("rgb(23, 162, 184)"));
+                  let darkButton = document.querySelector('#darkColor').addEventListener('click', (e) => changeColor("rgb(52, 58, 64)"));
+
+                  
+                  </script>
+</body>
+</html>

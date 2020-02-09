@@ -1,0 +1,134 @@
+.sticker {
+    padding-top: 20px;
+    background: #ffffff;
+    min-height: 100px;
+    min-width: 100px;
+    position: relative;
+    margin-left: 400px;
+    border: 1px solid red;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+
+
+
+.primary {
+    background-color: #007bff;
+}
+
+
+.test {
+    visibility: hidden;
+}
+
+
+.pinBtn {
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: 175px;
+}
+.deleteButton {
+    border-radius: 50px;
+    border-color: transparent;
+}
+.card-header {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+#addNoteCard {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hide_block
+ {
+   display:none  !important;
+ }
+
+ .display_block
+ {
+    display:block !important;
+ } 
+
+
+ #colors {
+   border-radius: 50%;
+   height: 40px;
+   width: 80px;
+ }
+
+
+ .blue {
+   background-color: blue;
+ }
+
+ .newNote {
+   padding: 20px;
+   width: 246px;
+   
+ }
+
+ #main-header {
+   margin-bottom: 15px;
+ }
+
+
+ #header {
+   background-color: rgba(0, 0, 0, 0.03);
+ }
+
+#greenColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+#blueColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-left: 35px;
+  margin-right: 2px;
+}
+
+#redColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+#yellowColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+#lightBlueColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+#darkColor {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+#newNote {
+  margin-left: 25px;
+  width: 289px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+#pinnedNotesTitle {
+  text-align: center;
+}
+
+#createNewNote {
+  margin-left: 25px;
+}
+
+#createNote {
+  margin-left: 70px;
+}

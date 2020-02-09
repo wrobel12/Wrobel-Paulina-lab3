@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="drumScript.js"></script>
+
+
+    <title>Music project</title>
+
+  
+</head>
+<body>
+
+   
+
+        <div class="grid-container">
+
+                 Heading
+                <div class="grid-heading"><h1 class="glow"></h1></div>
+                <div class="grid-main">
+                 
+                    
+                  
+                  
+              
+                  Launchpad
+                <div class="controller">
+                    <h3>Record</h3>
+                  <button id="recButton" class="notRec">
+
+                 
+                                 
+            <h2>
+              Launchpad
+          </h2>
+
+                  </button>
+          
+                 <!-- Launchpad board  -->
+                  
+            <div class="board">
+                    <div class="board-buttons button-red"></div>
+                    <div class="board-buttons button-pink"></div>
+                    <div class="board-buttons button-green"></div>
+                    <div class="board-buttons button-blue"></div>
+                    <div class="board-buttons button-violet"></div>
+                   
+
+                    <div class="board-buttons button-green"></div>
+                    <div class="board-buttons button-blue"></div>
+                    <div class="board-buttons button-violet"></div>
+                    <div class="board-buttons button-red"></div>
+                    <div class="board-buttons button-pink"></div>
+                    
+
+                    <div class="board-buttons button-pink"></div>
+                    <div class="board-buttons button-red"></div>
+                    <div class="board-buttons button-blue"></div>
+                    <div class="board-buttons button-pink"></div>
+                    <div class="board-buttons button-green"></div>
+                   
+
+                    <div class="board-buttons button-blue"></div>
+                    <div class="board-buttons button-violet"></div>
+                    <div class="board-buttons button-green"></div>
+                    <div class="board-buttons button-red"></div>
+                    <div class="board-buttons button-violet"></div>
+                    
+
+                </div>
+              
+    
+            </div>
+
+            <!-- Playlist -->
+            <ul id="playlist">
+                <li id="channel1Play"><h4>Track 1</h4></li>
+                <li id="channel2Play"><h4>Track 2</h4></li>
+                <li id="channel3Play"><h4>Track 3</h4></li>
+                <li id="channel4Play"><h4>Track 4</h4></li>
+                
+                
+              </ul>
+
+           
+            </div>
+            </div>
+
+            <script type="text/javascript">
+
+              const lp = new launchpad('recButton');
+              lp.addSound('sounds/snare.wav', 'button-violet')
+              lp.addSound('sounds/kick.wav', 'button-green')
+              lp.addSound('sounds/hihat.wav', 'button-blue')
+              lp.addSound('sounds/clap.wav', 'button-pink')
+              lp.addSound('sounds/boom.mp3', 'button-red')
+
+              lp.addRecordChannel('channel1Play');
+              lp.addRecordChannel('channel2Play');
+              lp.addRecordChannel('channel3Play');
+              lp.addRecordChannel('channel4Play');
+
+
+
+
+             
+        
+        
+        
+        
+          </script>
+        
+
+</body>
+</html>
